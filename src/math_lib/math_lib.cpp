@@ -42,5 +42,32 @@ namespace MathLib
 		if (b == 0) return a;
 		return GCD(b, a % b);
 	}
+
+
+    std::vector<double> solveQuadraticEquation(double a, double b, double c)
+    {
+        std::vector<double> roots;
+
+        if (a == 0)
+        {
+            throw std::invalid_argument("Coefficient 'a' cannot be zero in a quadratic equation.");
+        }
+
+        double D = b * b - 4 * a * c; 
+
+        if (D > 0) 
+        {
+            double sqrtD = sqrt(D);
+            roots.push_back((-b + sqrtD) / (2 * a)); 
+            roots.push_back((-b - sqrtD) / (2 * a)); 
+        }
+        else if (D == 0) 
+        {
+            roots.push_back(-b / (2 * a)); 
+        }
+        
+
+        return roots;
+    }
 }
 

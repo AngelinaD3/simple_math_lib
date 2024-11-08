@@ -69,4 +69,7 @@ namespace MathLib
 
     // Function to search GCD
     int GCD(int a, int b);
+
+
+    std::vector<double> solveQuadraticEquation(double a, double b, double c);
 }
