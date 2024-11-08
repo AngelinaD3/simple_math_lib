@@ -43,7 +43,7 @@ namespace MathLib
 		return GCD(b, a % b);
 	}
 
-
+    //feature solveQuadraticEquation
     std::vector<double> solveQuadraticEquation(double a, double b, double c)
     {
         std::vector<double> roots;

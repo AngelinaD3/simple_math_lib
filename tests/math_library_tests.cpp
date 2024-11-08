@@ -78,6 +78,7 @@ TEST_F(MathLibTestFixture, GreatestCommonDivider)
     EXPECT_EQ(MathLib::GCD(10, 6), 2);
 }
 
+
 TEST_F(MathLibTestFixture, SolveQuadraticEquationInvalid)
 {
     EXPECT_THROW(MathLib::solveQuadraticEquation(0, 2, 1), std::invalid_argument);
